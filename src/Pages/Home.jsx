@@ -1,10 +1,10 @@
 import React from "react";
 import RotatingText from "../components/RotatingText/RotatingText";
-// import CountUp from "../components/CountUp/CountUp";
+import FileUploader from "../components/FileUploader";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-full text-center px-4 mt-12">
+    <div className="flex flex-col items-center text-center px-4 mt-12 min-h-screen pb-20">
       <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 md:flex gap-4">
         Enhancing{" "}
         <RotatingText
@@ -25,29 +25,10 @@ const Home = () => {
         Changing your Simple PDF into Professional Latex Resume.
       </p>
 
-      {/* Optional CountUp Block */}
-      {/* 
-      <div className="countbox text-5xl font-bold h-40 w-70 bg-black text-white rounded-xl flex items-center justify-center">
-        <CountUp
-          from={0}
-          to={100}
-          separator=","
-          direction="up"
-          duration={1}
-          className="count-up-text"
-        />
-        +
-      </div> 
-      */}
-
-      {/* Optional CTA Button */}
-      {/* 
-      <button className="mt-12 px-6 py-3 bg-blue-600 text-white rounded-full text-lg font-semibold hover:bg-blue-700 transition">
-        Get Started
-      </button>
-      */}
+      <FileUploader />
     </div>
   );
 };
+
 
 export default Home;

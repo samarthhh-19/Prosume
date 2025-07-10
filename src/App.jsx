@@ -42,7 +42,7 @@ const AppContent = () => {
   ];
 
   return (
-    <div className="h-screen w-screen relative overflow-hidden bg-white">
+    <div className="min-h-screen w-screen relative overflow-x-hidden overflow-y-auto">
       <Squares speed={0.1} squareSize={35} direction="diagonal" borderColor="rgba(6, 6, 6, 0.03)" hoverFillColor="white" />
 
       <div className="absolute inset-0 z-10">
